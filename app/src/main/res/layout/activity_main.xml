@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/camara"
+        android:backgroundTint="@color/verde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tomar la foto de una prenda"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Tipo"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camara" />
+    <Spinner
+        android:id="@+id/spinner_tipo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:entries="@array/tipo_spinner"
+        app:layout_constraintBottom_toBottomOf="@+id/tipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tipo"
+        app:layout_constraintTop_toTopOf="@+id/tipo" />
+
+    <TextView
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Color"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/tipo"
+        app:layout_constraintTop_toBottomOf="@+id/tipo" />
+
+    <Spinner
+        android:id="@+id/spinner_color"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/color_spinner"
+        app:layout_constraintBottom_toBottomOf="@+id/color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/spinner_tipo"
+        app:layout_constraintTop_toTopOf="@+id/color" />
+
+    <TextView
+        android:id="@+id/temporada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temporada"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/camara"
+        app:layout_constraintEnd_toEndOf="@+id/camara"
+        app:layout_constraintTop_toBottomOf="@+id/color" />
+    <Spinner
+        android:id="@+id/spinner_temp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:entries="@array/temp_spinner"
+        app:layout_constraintEnd_toEndOf="@+id/foto"
+        app:layout_constraintStart_toStartOf="@+id/foto"
+        app:layout_constraintTop_toBottomOf="@+id/temporada" />
+
+    <TextView
+        android:id="@+id/moda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moda"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/camara"
+        app:layout_constraintEnd_toEndOf="@+id/camara"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_temp" />
+    <Spinner
+        android:id="@+id/spinner_moda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:entries="@array/moda_spinner"
+        app:layout_constraintEnd_toEndOf="@id/foto"
+        app:layout_constraintStart_toStartOf="@+id/foto"
+        app:layout_constraintTop_toBottomOf="@+id/moda" />
+
+    <Button
+        android:id="@+id/guardar"
+        android:backgroundTint="@color/naranja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favorito" />
+
+    <CheckBox
+        android:id="@+id/favorito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="FAVORITO"
+        app:layout_constraintEnd_toEndOf="@id/foto"
+        app:layout_constraintStart_toStartOf="@+id/foto"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_moda" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

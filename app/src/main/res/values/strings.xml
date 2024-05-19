@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Proyecto_iurClothes</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    //Lista del spinner del tipo de prenda
+    <string name="tipo_spinner">Listas</string>
+    <string name="mensaje">Elige </string>
+    <string-array name="tipo_spinner">
+        <item>Camiseta</item>
+        <item>Camisa</item>
+        <item>Pantalón</item>
+        <item>P.corto</item>
+        <item>Zapatillas</item>
+        <item>Zapatos</item>
+    </string-array>
+
+    //Lista del spinner del color de la prenda
+    <string name="color_spinner">Listas</string>
+    <string-array name="color_spinner">
+        <item>Azul</item>
+        <item>Rojo</item>
+        <item>Rosa</item>
+        <item>Negro</item>
+        <item>Blanco</item>
+        <item>Verde</item>
+        <item>Amarillo</item>
+        <item>Marrón</item>
+        <item>Gris</item>
+        <item>Naranja</item>
+        <item>Morado</item>
+    </string-array>
+
+    //Lista del spinner de la temporada de la prenda
+    <string name="temp_spinner">Listas</string>
+    <string-array name="temp_spinner">
+        <item>Verano</item>
+        <item>Invierno</item>
+        <item>Primavera</item>
+        <item>Otoño</item>
+    </string-array>
+
+    //Lista del spinner de la Moda de la prenda
+    <string name="moda_spinner">Listas</string>
+    <string-array name="moda_spinner">
+        <item>Casual</item>
+        <item>Deportiva</item>
+        <item>Formal</item>
+    </string-array>
+
+    //Lista del spinner de la parte superior
+    <string name="superior_spinner">Listas</string>
+    <string-array name="superior_spinner">
+        <item>Camisa</item>
+        <item>Camiseta</item>
+    </string-array>
+
+    //Lista del spinner de la parte inferior
+    <string name="inferior_spinner">Listas</string>
+    <string-array name="inferior_spinner">
+        <item>Pantalón</item>
+        <item>P.corto</item>
+    </string-array>
+
+    //Lista del spinner del calzado
+    <string name="calzado_spinner">Listas</string>
+    <string-array name="calzado_spinner">
+        <item>Zapatillas</item>
+        <item>Zapatos</item>
+    </string-array>
+
+</resources>
+

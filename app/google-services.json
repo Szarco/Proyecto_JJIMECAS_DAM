@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "77453463775",
+    "project_id": "iurclothes",
+    "storage_bucket": "iurclothes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77453463775:android:5d1e7d64a840fe731c996a",
+        "android_client_info": {
+          "package_name": "com.example.proyecto_iurclothes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKalFuF887NafcvmXGh0bmmRYzEMj1bdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
