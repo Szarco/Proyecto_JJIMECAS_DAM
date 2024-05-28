@@ -65,7 +65,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/verde"
-        android:text="¿Nuevo outfit?"
+        android:text="Nuevo outfit"
         app:layout_constraintEnd_toEndOf="@+id/bienvenido"
         app:layout_constraintStart_toStartOf="@+id/bienvenido"
         app:layout_constraintTop_toBottomOf="@+id/armario"/>
