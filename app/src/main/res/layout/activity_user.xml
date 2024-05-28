@@ -29,7 +29,7 @@ ail<?xml version="1.0" encoding="utf-8"?>
     <EditText
         android:id="@+id/edit_usuario"
         android:inputType="text"
-        android:hint="por favor introduce email"
+        android:hint="Por favor introduce email"
         android:drawableLeft="@drawable/icon_ropa"
         android:drawablePadding="10dp"
         android:layout_width="0dp"
@@ -41,7 +41,7 @@ ail<?xml version="1.0" encoding="utf-8"?>
     <EditText
         android:drawableLeft="@drawable/pass_ico"
         android:drawablePadding="20dp"
-        android:hint="por favor introduce pass"
+        android:hint="Por favor introduce pass"
         android:inputType="textPassword"
         android:layout_marginTop="20dp"
         android:id="@+id/edit_pass"
