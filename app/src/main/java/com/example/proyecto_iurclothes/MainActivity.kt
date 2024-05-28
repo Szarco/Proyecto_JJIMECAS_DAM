@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import com.example.proyecto_iurclothes.databinding.ActivityMainBinding
 import com.example.proyecto_iurclothes.model.Prenda
@@ -83,7 +84,7 @@ class MainActivity : AppCompatActivity() {
     val abrirCamara = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
         //Resultado de la actividad de la cámara
         if (it.resultCode == Activity.RESULT_OK) {
-            val data = it.data!!
+            val data = it.data
             val bitmap = BitmapFactory.decodeFile(file.toString())
             //Mostrar la imagen en el imagenView
             binding.foto.setImageBitmap(bitmap)
@@ -127,6 +128,7 @@ class MainActivity : AppCompatActivity() {
                 Snackbar.make(binding.root, "Prenda guardada", Snackbar.LENGTH_INDEFINITE).setAction("Ok") {}.show()
             }
     }
+
 }
 
 

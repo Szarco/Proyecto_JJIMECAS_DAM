@@ -26,6 +26,7 @@
 
     <TextView
         android:id="@+id/tipo"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -38,6 +39,7 @@
     <Spinner
         android:id="@+id/spinner_tipo"
         android:layout_width="0dp"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:entries="@array/tipo_spinner"
@@ -49,6 +51,7 @@
     <TextView
         android:id="@+id/color"
         android:layout_width="wrap_content"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Color"
@@ -60,6 +63,7 @@
     <Spinner
         android:id="@+id/spinner_color"
         android:layout_width="0dp"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:entries="@array/color_spinner"
         app:layout_constraintBottom_toBottomOf="@+id/color"
@@ -70,6 +74,7 @@
     <TextView
         android:id="@+id/temporada"
         android:layout_width="wrap_content"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Temporada"
@@ -81,6 +86,7 @@
     <Spinner
         android:id="@+id/spinner_temp"
         android:layout_width="0dp"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:entries="@array/temp_spinner"
@@ -92,6 +98,7 @@
         android:id="@+id/moda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:layout_marginTop="10dp"
         android:text="Moda"
         android:textSize="20dp"
@@ -102,6 +109,7 @@
     <Spinner
         android:id="@+id/spinner_moda"
         android:layout_width="0dp"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:entries="@array/moda_spinner"
@@ -112,6 +120,7 @@
     <Button
         android:id="@+id/actualizar"
         android:backgroundTint="@color/verde"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
@@ -127,6 +136,7 @@
         android:layout_height="wrap_content"
         android:text="Borrar"
         android:backgroundTint="@color/naranja"
+        android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/actualizar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -135,6 +145,7 @@
 
     <CheckBox
         android:id="@+id/favorito"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"

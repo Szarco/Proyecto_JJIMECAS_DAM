@@ -40,9 +40,10 @@ class MenuActivity : AppCompatActivity() {
         //Acción para cerrar sesión de la autentificación previa
         binding.cerrarSesion.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
-            //Para volver atrás en la app
-            onBackPressedDispatcher.onBackPressed()
-            //onBackPressed()
+            //Para volver al registro o inicio de sesión
+            val intent = Intent(applicationContext, UserActivity::class.java)
+            startActivity(intent)
+
         }
     }
 }
