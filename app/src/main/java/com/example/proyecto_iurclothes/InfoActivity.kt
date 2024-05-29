@@ -27,6 +27,26 @@ class InfoActivity : AppCompatActivity() {
         binding = ActivityInfoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Configuración del adaptador para el spinner de Tipo
+        val tipoAdapter = ArrayAdapter.createFromResource(this, R.array.tipo_spinner, android.R.layout.simple_spinner_item)
+        tipoAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.spinnerTipo.adapter = tipoAdapter
+
+        // Configuración del adaptador para el spinner de Color
+        val colorAdapter = ArrayAdapter.createFromResource(this, R.array.color_spinner, android.R.layout.simple_spinner_item)
+        colorAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.spinnerColor.adapter = colorAdapter
+
+        // Configuración del adaptador para el spinner de Temporada
+        val temporadaAdapter = ArrayAdapter.createFromResource(this, R.array.temp_spinner, android.R.layout.simple_spinner_item)
+        temporadaAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.spinnerTemp.adapter = temporadaAdapter
+
+        // Configuración del adaptador para el spinner de Moda
+        val modaAdapter = ArrayAdapter.createFromResource(this, R.array.moda_spinner, android.R.layout.simple_spinner_item)
+        modaAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.spinnerModa.adapter = modaAdapter
+
         // Recuperar la prenda seleccionada del intent
         prenda = intent.getSerializableExtra("prenda") as Prenda
 

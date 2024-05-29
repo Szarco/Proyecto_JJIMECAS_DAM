@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.proyecto_iurclothes.adapter.AdaptadorPrendas
 import com.example.proyecto_iurclothes.databinding.ActivitySecondBinding
@@ -24,6 +25,11 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Configuración del adaptador para el spinner de Tipo
+        val tipoAdapter = ArrayAdapter.createFromResource(this, R.array.tipo_spinner, android.R.layout.simple_spinner_item)
+        tipoAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.spinnerTipo.adapter = tipoAdapter
 
         // Configuración del RecyclerView
         adaptadorPrendas = AdaptadorPrendas(listaPrendas, this)

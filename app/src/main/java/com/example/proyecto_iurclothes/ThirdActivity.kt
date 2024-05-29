@@ -2,6 +2,7 @@ package com.example.proyecto_iurclothes
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.example.proyecto_iurclothes.databinding.ActivityThirdBinding
@@ -22,6 +23,20 @@ class ThirdActivity : AppCompatActivity() {
         binding = ActivityThirdBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Configurar adaptador para el spinner de la parte superior
+        val adapterSuperior = ArrayAdapter.createFromResource(this, R.array.superior_spinner, android.R.layout.simple_spinner_item)
+        adapterSuperior.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.spinnerSuperior.adapter = adapterSuperior
+
+        // Configurar adaptador para el spinner de la parte inferior
+        val adapterInferior = ArrayAdapter.createFromResource(this, R.array.inferior_spinner, android.R.layout.simple_spinner_item)
+        adapterInferior.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.spinnerInferior.adapter = adapterInferior
+
+        // Configurar adaptador para el spinner del calzado
+        val adapterCalzado = ArrayAdapter.createFromResource(this, R.array.calzado_spinner, android.R.layout.simple_spinner_item)
+        adapterCalzado.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.spinnerCalzado.adapter = adapterCalzado
 
         //Acción para fijar la imagen correspondiente a la parte superior
         binding.fijarSup.setOnClickListener {
