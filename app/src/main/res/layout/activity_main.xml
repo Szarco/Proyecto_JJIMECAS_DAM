@@ -46,13 +46,14 @@
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/camara" />
+
     <Spinner
         android:id="@+id/spinner_tipo"
         android:layout_width="0dp"
-        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:entries="@array/tipo_spinner"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/tipo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tipo"
@@ -72,9 +73,9 @@
     <Spinner
         android:id="@+id/spinner_color"
         android:layout_width="0dp"
-        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:entries="@array/color_spinner"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/spinner_tipo"
@@ -93,10 +94,10 @@
         app:layout_constraintTop_toBottomOf="@+id/color" />
     <Spinner
         android:id="@+id/spinner_temp"
-        android:textColor="@color/black"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
         android:entries="@array/temp_spinner"
         app:layout_constraintEnd_toEndOf="@+id/foto"
         app:layout_constraintStart_toStartOf="@+id/foto"
@@ -116,8 +117,8 @@
     <Spinner
         android:id="@+id/spinner_moda"
         android:layout_width="0dp"
-        android:textColor="@color/black"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
         android:layout_marginTop="10dp"
         android:entries="@array/moda_spinner"
         app:layout_constraintEnd_toEndOf="@id/foto"
